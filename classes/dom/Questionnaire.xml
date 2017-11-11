@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE questionnaires SYSTEM "Questionnaire.dtd">
+<questionnaires>
+  <questionnaire >
+    <titre >Questionnaire1</titre>
+    <description >
+      <interpretation indicateur ="triangle">ton meilleur atout est ton caractere consciencieux et organise</interpretation>
+      <interpretation indicateur = "rond">ton meilleur atout est ta personnalite tres ouverte et ton sens du relationnel</interpretation>
+      <interpretation indicateur = "losange">ton meilleur atout est ta volonte et ton sens des priorites</interpretation>
+    </description>
+    <questions>
+      <q>
+	<enonce>blablabla?</enonce>
+	<propositions> 
+	  <reponse idref ="rond">oui</reponse>
+	  <reponse idref ="losange">non</reponse>
+	  <reponse idref ="triangle">je ne sais pas</reponse>
+	</propositions>
+      </q>
+    </questions>
+  </questionnaire>
+</questionnaires>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE formules SYSTEM "Expressions.dtd">
+<formules>
+	<constantes>
+		<const valeur="3" nom="X" />
+		<const valeur="78" nom="Y" />
+		<const valeur="45" nom="Z" />
+	</constantes>
+	<exps>
+		<!-- (X + Z) -->
+		<exp nom="R1">
+			<op symbole="+">
+				<var nom="X" />
+				<var nom="Z" />
+			</op>
+		</exp>
+		<!-- (X*X) + (X*X) -->
+		<exp nom="R2">
+			<op symbole="+">
+				<op symbole="*">
+					<var nom="X" />
+					<var nom="X" />
+				</op>
+				<op symbole="*">
+					<var nom="Y" />
+					<var nom="Y" />
+				</op>
+			</op>
+		</exp>
+		<!-- Question 4 : R3 = X * (X * (X * (Y+Z))) -->
+		<exp nom="R3">
+			<op symbole="*">
+				<var nom="X" />
+				<op symbole="*">
+					<var nom="X" />
+					<op symbole="*">
+						<var nom="X" />
+						<op symbole="+">
+							<var nom="Y" />
+							<var nom="Z" />
+						</op>
+					</op>
+				</op>
+			</op>
+		</exp>
+	</exps>
+</formules>

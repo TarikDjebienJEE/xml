@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ELEMENT questionnaires (questionnaire+)>
+<!ELEMENT questionnaire (titre,description,questions)>
+
+<!ELEMENT titre (#PCDATA)>
+
+<!ELEMENT description (interpretation,interpretation,interpretation)>
+<!ELEMENT interpretation (#PCDATA)>
+<!ATTLIST interpretation indicateur ID #REQUIRED>
+
+<!ELEMENT questions (q)+>
+<!ELEMENT q (enonce,propositions)> 
+
+<!ELEMENT enonce (#PCDATA)>
+<!ELEMENT propositions (reponse,reponse,reponse)>
+
+<!ELEMENT reponse (#PCDATA)>
+<!ATTLIST reponse idref IDREFS #REQUIRED>

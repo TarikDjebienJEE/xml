@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT formules (constantes,exps)>
+<!ELEMENT constantes (const)* >
+<!ELEMENT const EMPTY >
+<!ATTLIST const valeur CDATA #REQUIRED nom ID #REQUIRED >
+<!ELEMENT exps (exp)* >
+<!ELEMENT exp (op) >
+<!ATTLIST exp nom ID #REQUIRED >
+<!ELEMENT op ((var,var)|(op,op)|(var,op)) >
+<!ATTLIST op symbole CDATA #REQUIRED >
+<!ELEMENT var EMPTY >
+<!ATTLIST var nom IDREFS #REQUIRED >
+
